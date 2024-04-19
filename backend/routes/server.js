@@ -35,7 +35,8 @@ router.post("/signin", signAuthSchemaValidation, checkUserExits, async (req, res
         const token = "Bearer " + signature;
 
         return res.status(200).json({
-            token
+            msg: "User signed-in successfully",
+            token: token
         });
     }
     catch(e){
