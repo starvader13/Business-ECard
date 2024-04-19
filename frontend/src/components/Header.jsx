@@ -8,7 +8,7 @@ export function Header(){
     const [signupResponse, setSignupResponse] = useState("");
 
     async function signup(){
-        const res = await fetch("http://localhost:4000/api/signup", {
+        const res = await fetch("https://business-ecard.onrender.com/api/signup", {
             method: "POST",
             body:JSON.stringify({
                 email: email,
@@ -23,7 +23,7 @@ export function Header(){
     }
 
     async function signin(){
-        const res = await fetch("http://localhost:4000/api/signin", {
+        const res = await fetch("https://business-ecard.onrender.com/api/signin", {
             method: "POST",
             body:JSON.stringify({
                 email: email,

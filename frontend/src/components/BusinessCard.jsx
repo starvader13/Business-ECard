@@ -14,7 +14,7 @@ export function BusinessCard(){
     interestArray = interestArray.map((data) => {return data.trim()});
 
     async function addDatabaseEntry(){
-        const response = await fetch("http://localhost:4000/api/card",{
+        const response = await fetch("https://business-ecard.onrender.com/api/card",{
             method: "post",
             body: JSON.stringify({
                 name: name,

@@ -5,7 +5,7 @@ export function CardResponse(props) {
     const [cardEntry, setCardEntry]=useState("");
 
     async function createCard(){
-        const res = await fetch(`http://localhost:4000/api/card/${props.response.cardId}`,{
+        const res = await fetch(`https://business-ecard.onrender.com/api/card/${props.response.cardId}`,{
             method: "get",
         })
         const json = await res.json();
