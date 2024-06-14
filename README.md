@@ -1,4 +1,4 @@
-# Business-ECard
+# ECard
 
 ## Introduction
 A React website to generate e-card for a user
